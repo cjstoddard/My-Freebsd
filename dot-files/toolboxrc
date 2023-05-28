@@ -1,0 +1,49 @@
+&Programs
+{
+	&File Manager: xfile
+	&NEdit: nedit
+	&Emacs: emacs
+	&Remind: remind
+	SEPARATOR
+	&GIMP: gimp
+	&Blender: blender
+}
+
+&Web \& Mail
+{
+	&Firefox: firefox
+	&Web-Browser: links -g
+	&Claws-mail: claws-mail
+	&E-Mail: xterm -title "E-Mail" -geometry 96x40 -e mutt
+}
+
+&Utilities
+{
+	X&OSView: xosview
+	X&pdf: xpdf
+	&Ghostview: gv
+	&Nomacs: nomacs
+	SEPARATOR
+	X11 &Utilities 
+	{
+		&Text Editor: xedit
+		&Clipboard: xclipboard
+		&Magnifier: xmag
+		&Icon Editor: bitmap
+		M&anpage Viewer: xman
+		Ca&lculator: xcalc
+	}
+}
+
+&Terminals
+{
+	&Tilix: tilix
+	&XTerm: xterm
+	X&Term With Scrollbar: xterm -sb -rightbar
+}
+
+&Locations
+{
+	&Home: xfile $HOME
+	&Media: xfile /media/$LOGNAME
+}
