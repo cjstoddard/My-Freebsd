@@ -6,6 +6,7 @@
 	SEPARATOR
 	&GIMP: gimp
 	&Blender: blender
+    &Audacious: audacious
 }
 
 &Web \& Mail
