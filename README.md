@@ -48,9 +48,12 @@ This generally goes pretty quick. Next comes Xorg, I use emwm as my window manag
     
 Then we can finally install tilix
 
-    cd /usr/port/x11/tilx
+    cd /usr/port/x11/tilix
     make install
-    
+
+Once this is all done, copy the dot files to the home directory of your user account, renaming the; .xinitrc, .toolboxrc and .emwmrc. If you want to make changes to the menu box, edit the .toolboxrc and if you want to make changes to how emwm works, edit the .emwmrc file.
+
+You should now beable to log in as you regular user account, type startx and you should be ready to go.
  
 
 
