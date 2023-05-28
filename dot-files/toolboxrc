@@ -3,7 +3,6 @@
 	&File Manager: xfile
 	&NEdit: nedit
 	&Emacs: emacs
-	&Remind: remind
 	SEPARATOR
 	&GIMP: gimp
 	&Blender: blender
@@ -12,8 +11,9 @@
 &Web \& Mail
 {
 	&Firefox: firefox
+    &Thunderbird: thunderbird
+    SEPARATOR
 	&Web-Browser: links -g
-	&Claws-mail: claws-mail
 	&E-Mail: xterm -title "E-Mail" -geometry 96x40 -e mutt
 }
 

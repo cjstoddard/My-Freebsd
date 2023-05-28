@@ -10,7 +10,7 @@ Once I log in as root for the first time, I install all the text mode programs I
     
 This generally goes pretty quick. Next comes Xorg, I use emwm as my window manager. Like to install all the things needed to make it work out of the box, with no configurations, plus the stuff I use.
 
-    pkg install open-motif nedit gimp blender claws-mail mutt xedit xclipboard xmag bitmap xman xcalc xpdf gv xorg nomacs firefox-esr emacs
+    pkg install open-motif nedit gimp blender thunderbird mutt xedit xclipboard xmag bitmap xman xcalc xpdf gv xorg nomacs firefox-esr emacs
     
  Next I download and compile emwm, since it is not availble as a Freebsd package or in ports.
  
