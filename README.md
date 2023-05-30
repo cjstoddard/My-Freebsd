@@ -6,7 +6,7 @@ I start with a basic install of FreeBSD, I pretty much take all the defaults, ma
 
 Once I log in as root for the first time, I install all the text mode programs I use;
 
-    pkg install sudo mc links neofetch cmus htop nano wget git
+    pkg install sudo mc links neofetch cmus htop nano wget git zsh
     
 This generally goes pretty quick. Next comes Xorg, I use emwm as my window manager. I Like to install all the things needed to make it work out of the box, with no configurations, plus the stuff I use.
 
@@ -55,8 +55,3 @@ Once this is all done, copy the dot files to the home directory of your user acc
 
 You should now be able to log in as you regular user account, type startx and you should be ready to go.
  
-
-
-
-
-
