@@ -12,7 +12,7 @@ This generally goes pretty quick. Next comes Xorg, I use emwm as my window manag
 
     pkg install open-motif nedit gimp blender thunderbird mutt xedit xclipboard xmag bitmap xman xcalc xpdf gv xorg nomacs firefox-esr emacs audacious audacious-plugins
     
- Next I download and compile emwm, since it is not availble as a Freebsd package or in ports.
+Next I download and compile emwm, since it is not availble as a Freebsd package or in ports.
  
     cd /usr/src
     mkdir emwm
@@ -38,11 +38,11 @@ This generally goes pretty quick. Next comes Xorg, I use emwm as my window manag
     make && make install
     cd ..
  
- The next step is to install the terminal emulator I like best, which is tilix. This is availble in the ports repo. Before installing it via ports, it is a good idea to install its dependancies via the pkg tool, if you don't it will compile all the dependencies from source and will take a lot of time.
+The next step is to install the terminal emulator I like best, which is tilix. This is availble in the ports repo. Before installing it via ports, it is a good idea to install its dependancies via the pkg tool, if you don't it will compile all the dependencies from source and will take a lot of time.
  
     pkg install cmake po4a gtkd desktop-file-utils gettext-tools meson ninja pkgconf ldc harfbuzz libsecret libunwind gettext-runtime at-spi2-core cairo gtk3 librsvg2-rust pango vte3 dub
     
- Once that is done we need to download the ports collection.
+Once that is done we need to download the ports collection.
  
     git clone https://git.FreeBSD.org/ports.git /usr/ports
     
