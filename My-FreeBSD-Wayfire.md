@@ -1,5 +1,11 @@
 # Install Wayfire under FreeBSD
 
+pkg install drm-kmod
+
+sysrc kld_list+=amdgpu     #for AMD graphics
+
+sysrc kld_list+=i915kms     #for intel graphics
+
 pw groupmod video -m user
 
 pkg install wayland seatd
