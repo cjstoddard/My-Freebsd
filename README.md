@@ -17,14 +17,14 @@ Next I download and compile emwm, since it is not availble as a Freebsd package 
     cd /usr/src
     mkdir emwm
     cd emwm
-    wget http://fastestcode.org/dl/emwm-src-1.1.tar.xz
-    tar -xf emwm-src-1.1.tar.xz
-    cd emwm-src-1.1
+    wget http://fastestcode.org/dl/emwm-src-1.2.tar.xz
+    tar -xf emwm-src-1.2.tar.xz
+    cd emwm-src-1.2
     make && make install
     cd ..
-    wget http://fastestcode.org/dl/emwm-utils-src-1.1.tar.xz
-    tar -xf emwm-utils-src-1.1.tar.xz
-    cd emwm-utils-src-1.1
+    wget http://fastestcode.org/dl/emwm-utils-src-1.2.tar.xz
+    tar -xf emwm-utils-src-1.2.tar.xz
+    cd emwm-utils-src-1.2
     make && make install
     cd ..
     wget http://fastestcode.org/dl/xfile-src-1.0-beta.tar.xz
