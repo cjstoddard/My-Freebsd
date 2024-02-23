@@ -1,42 +1,59 @@
 # Install Wayfire under FreeBSD
 
-pkg install drm-kmod
+If you prefer a more standard desktop envirnment, here is how I got Wayfire running under FreeBSD. The first step of course is getting the proper graphics firmware.
+This command install the firmware needed
 
-sysrc kld_list+=amdgpu     #for AMD graphics
+    pkg install drm-kmod
 
-sysrc kld_list+=i915kms     #for intel graphics
+This makes sure proper driver get loaded at boot. For AMD graphics
 
-pw groupmod video -m user
+    sysrc kld_list+=amdgpu
 
-pkg install wayland seatd
+and for intel graphics
 
-mkdir ~/.cache/run
+    sysrc kld_list+=i915kms
 
-chmod 700 ~/.cache/run
+This adds the user to the video group which allows direct access to the video hardware
 
-add this line to your .bashrc or .zshrc file and reboot
-
-export XDG_RUNTIME_DIR=~/.cache/run
-
-sysrc seatd_enable=”YES”
-
-service seatd start
-
-service seatd status
-
-sysrc dbus_enable="YES"
-
-service dbus start
-
-service dbus status
+    pw groupmod video -m user
 
 
-pkg install wayfire wf-shell alacritty swaylock-effects swayidle wlogout kanshi mako wlsunset
+Install the basic packages needed for Wayland
 
-mkdir ~/.config/wayfire
+    pkg install wayland seatd
 
-cp /usr/local/share/examples/wayfire/wayfire.ini ~/.config/wayfire
+The following is needed to make sure Wayfire can operate properly.
 
-To Run:
+    mkdir ~/.cache/run
 
-wayfire -c ~/.config/wayfire/wayfire.ini
+    chmod 700 ~/.cache/run
+
+add this line to your .bashrc, .zshrc, .cshrc or whatever rc file for the shell you use and reboot.
+
+    export XDG_RUNTIME_DIR=~/.cache/run
+
+Next, we need to start the services needed for proper functioning of Wayfire.
+
+    sysrc seatd_enable=”YES”
+
+    service seatd start
+
+    service seatd status
+
+    sysrc dbus_enable="YES"
+
+    service dbus start
+
+    service dbus status
+
+Next we install Wayfire.
+
+    pkg install wayfire wf-shell alacritty swaylock-effects swayidle wlogout kanshi mako wlsunset
+
+    mkdir ~/.config/wayfire
+
+    cp /usr/local/share/examples/wayfire/wayfire.ini ~/.config/wayfire
+
+Finall to run Wayfire:
+
+    wayfire -c ~/.config/wayfire/wayfire.ini
