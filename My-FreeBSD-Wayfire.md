@@ -28,9 +28,10 @@ The following is needed to make sure Wayfire can operate properly.
 
     chmod 700 ~/.cache/run
 
-add this line to your .bashrc, .zshrc, .cshrc or whatever rc file for the shell you use and reboot.
+add this lines to your .bashrc, .zshrc, .cshrc or whatever rc file for the shell you use and reboot.
 
     export XDG_RUNTIME_DIR=~/.cache/run
+    alias wayfire='dbus-launch wayfire'
 
 Next, we need to start the services needed for proper functioning of Wayfire.
 
@@ -56,4 +57,4 @@ Next we install Wayfire.
 
 Finally to run Wayfire:
 
-    wayfire -c ~/.config/wayfire/wayfire.ini
+    wayfire
