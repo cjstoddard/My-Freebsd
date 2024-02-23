@@ -54,6 +54,6 @@ Next we install Wayfire.
 
     cp /usr/local/share/examples/wayfire/wayfire.ini ~/.config/wayfire
 
-Finall to run Wayfire:
+Finally to run Wayfire:
 
     wayfire -c ~/.config/wayfire/wayfire.ini
